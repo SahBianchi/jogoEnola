@@ -284,14 +284,14 @@ function enigma2(enigma2){
     //escolhendo sim ou não
     respostaNao.addEventListener('click', function(){
         errouEnigma2()
-        imagem2.remove()
+        imagem2.innerHTML=''
         imagem.innerHTML=''
         contador += 1
     })
     
     respostaSim.addEventListener('click', function(){
         telaEntreEnigmas2()
-        imagem2.remove()
+        imagem2.innerHTML=''
         imagem.innerHTML=''
     })
     
@@ -445,14 +445,14 @@ function enigma3(enigma3){
     //escolhendo sim ou não
     respostaNao.addEventListener('click', function(){
         errouEnigma3()
-        imagem2.remove()
+        imagem2.innerHTML=''
         imagem.innerHTML=''
         contador += 1
     })
     
     respostaSim.addEventListener('click', function(){
         telaFinal()
-        imagem2.remove()
+        imagem2.innerHTML=''
         imagem.innerHTML=''
     })
     
@@ -468,7 +468,7 @@ function enigma3(enigma3){
     //adiconando conteudo a tag p / variavel introducao 
     introducao.innerHTML = 'Existem diversas formas de codificar palavras.<br>Abaixo, temos um modelo, chamado Cifra de Cezar, que consiste em trocar as letras da palavra de acordo com o deslocamento do anel, substituindo a letra do anel externo pela letra do anel interno.'
 
-    imagem.innerHTML=`<img class='cifraCesar' src="/Volumes/Bya Biamc/RESILIA-original/exercicios/EnolaJogo/img/enigma3.jpg" alt="">`
+    imagem.innerHTML=`<img class='cifraCesar' src="../img/enigma3.jpg" alt="">`
 
     introducao2.innerHTML = 'Supondo que o deslocamento do anel fosse 1, teríamos o seguinte: a palavra AMOR “viraria” BNPS<br>A + 1 = B<br>M + 1 = N<br>O + 1 = P<br>R + 1 = S<br>'
 
